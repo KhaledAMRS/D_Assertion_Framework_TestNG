@@ -1,0 +1,6 @@
+TestNG Topics		https://testng.org/doc/
+
+3- How to create Suite Collection
+
+	xml suite file: used to create your test suites and Running your test cases
+	to get a template of xml content refer to this link https://testng.org/doc/documentation-main.html#testng-xml

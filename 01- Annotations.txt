@@ -1,0 +1,28 @@
+TestNG Topics		https://testng.org/doc/
+
+1- Annotations       
+  // to execute test cases independently of each other and not affected if previous test cases have failure.  if first test case 1 failed, test case 2 should not be blocked.
+	
+	TestNG Annotations: used to specify each method and when to be executed in your test flow
+	
+	The most important Annotations you need to know
+	@Test: A test method is a Java method annotated by @Test in your source.
+	@BeforeMethod: The annotated method will be run before each test method.
+	@AfterMethod: The annotated method will be run after each test method.
+	@BeforeTest: The annotated method will be run before any test method belonging to the classes inside the <test> tag is run.
+	@AfterTest: The annotated method will be run after all the test methods belonging to the classes inside the <test> tag have run.
+	
+	There are other Annotations, you could have an idea about them from this link 
+	https://testng.org/doc/documentation-main.html#annotations
+	
+	
+	Priority is a parameter used with Annotations E.X @Test(priority=1)
+	Prioritization in TestNG is a way to provide a sequence to the methods.
+	
+	There are other parameters other than parameters could be used, you could also have a look throught this link 
+	https://testng.org/doc/documentation-main.html#annotations
+	
+
+Note: No need to go far with TestNG Annotations because we are going to replace it with Cucumber Annotations after learning behaviour driven testing
+you just need to understand the difference between @BeforeMethod & @BeforeTest  /  @AfterMethod & @AfterTest and how to use priority
+

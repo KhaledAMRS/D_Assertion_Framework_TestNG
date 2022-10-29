@@ -1,0 +1,55 @@
+TestNG Topics		https://testng.org/doc/
+
+2- Assertions		 // to announce test case status pass/fail depending on the comparison between actual and expected result true/false
+
+
+2.1- AssertTrue, AssertFalse
+	
+	input1 for comparison
+	input2 as a Message  
+	
+	Notes: 
+	- input1 data type should be boolean
+	- input2 is only printed in console if the test case failed, but if the test case pass > the message will not be printed
+
+
+
+	- AssertEqual, AssertNotEqual
+	
+	input1 for actualResult
+	input2 for expectedResult
+	input3 for Message 
+	
+	
+	Notes: 
+	- input1 & input2 data type's could be anyting String, Int, boolean, double, char, etc (unlike assertTrue/False) 
+	- input1 & input2 should have the same data type  [ means: if input1 is String, then input2 should be String and so on but it's wrong that input1 is String and input2 is Int]
+	- input3 is only printed in console if the test case failed, but if the test case pass > the message will not be printed
+
+
+There are other assertions but it's rarely to be used  
+        Assert.assertEqualsDeep();
+		Assert.assertEqualsNoOrder();
+		etc		
+
+
+
+2.2- Difference between Hard/Soft Annotation
+
+    - Hard Assertion		>>		doesn't need new object
+    - Soft Assertion		>>		should create new object 
+
+
+Hard Assert: If assert condition gets failed
+1. TestNG throws an exception immediately after the assert fails
+2. The remaining statements inside the method will be aborted.
+3. TestNG carries out with the next test case of the suite. 
+
+
+Soft Assert: If assert condition gets failed
+1. TestNG collects errors during execution and doesn’t throws an exception immediately.
+2. If there is any exception and you want to throw it then you need to use assertAll() method as a last statement
+3. TestNG will carry out with the next test case of the suite. 
+
+
+Note: unlike Annotations, you should learn Assertions very well because we will use it with Cucumber as well
